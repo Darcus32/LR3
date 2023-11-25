@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LR3</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Radius')">Radius</button>
+        <button class="tablinks" onclick="openCity(event, 'Transition-duration')">Transition-duration</button>
+        <button class="tablinks" onclick="openCity(event, 'MaxHeight')">Transition-property</button>
+    </div>
+    <div id="Radius" class="tabcontent">
+        <div>Верхній лівий радіус:
+            <input type="range" id="rtl" min="0" max="100" value="0" oninput="generate()">
+            <input type="text" id="ttl" value="0">
+        </div>
+        <div>Верхній правий радіус:
+            <input type="range" id="rtr" min="0" max="100" value="0" oninput="generate()">
+            <input type="text" id="ttr" value="0">
+        </div>
+        <div> Нижній правий радіус:
+            <input type="range" id="rbr" min="0" max="100" value="0" oninput="generate()">
+            <input type="text" id="tbr" value="0">
+        </div>
+        <div> Нижній лівий радіус:
+            <input type="range" id="rbl" min="0" max="100" value="0" oninput="generate()">
+            <input type="text" id="tbl" value="0">
+        </div>
+        <div id="block">
+        </div>
+        <div id="code">
+            Code:
+        </div>
+        <textarea id="cssCode" rows="3" cols="30"></textarea>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
